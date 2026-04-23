@@ -1,7 +1,4 @@
 # 🚄 UK Rail Delay Monitoring & Alerting System
-![Python](https://img.shields.io/badge/Python-3.10-blue)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-orange)
-![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red)
 
 ## 📌 Overview
 
@@ -164,13 +161,6 @@ uk-rail-pipeline/
 - Advanced anomaly detection  
 - Geographic visualisation of delays (maps)  
 - Deployment to cloud platform  
-
----
-
-## 👤 Author
-
-**Thomas Blackburn**  
-🔗 [LinkedIn](https://linkedin.com/in/blackburn-thomas)
 
 ---
 
