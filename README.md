@@ -135,20 +135,25 @@ streamlit run app.py
 ```
 uk-rail-pipeline/
 │
+├── assets/                        # screenshots used in README
+│   └── dashboard_overview.png
+│
 ├── data/
-│   ├── raw/
-│   └── processed/
+│   ├── raw/                      # original dataset (not included in repo)
+│   └── processed/                # processed outputs / optional sample data
 │
-├── src/
-│   ├── ingest.py
-│   ├── clean.py
-│   ├── transform.py
-│   ├── metrics.py
-│   ├── alerts.py
-│   ├── storage.py
+├── src/                          # modular pipeline components
+│   ├── ingest.py                 # data loading
+│   ├── clean.py                  # data cleaning & standardisation
+│   ├── transform.py              # feature engineering (delays, classifications)
+│   ├── metrics.py                # aggregation & KPI calculations
+│   ├── alerts.py                 # alerting logic
+│   ├── storage.py                # database interactions (SQLite)
 │
-├── main.py
-├── app.py
+├── main.py                       # pipeline orchestration (runs end-to-end)
+├── app.py                        # Streamlit dashboard
+├── requirements.txt              # project dependencies
+├── .gitignore                    # ignored files (data, venv, etc.)
 └── README.md
 ```
 
