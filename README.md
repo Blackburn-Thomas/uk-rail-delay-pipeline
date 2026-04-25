@@ -135,11 +135,11 @@ streamlit run app.py
 ```
 uk-rail-pipeline/
 │
-├── assets/                        # screenshots used in README
+├── assets/                       # screenshots used in README
 │   └── dashboard_overview.png
 │
 ├── data/
-│   ├── raw/                      # original dataset (not included in repo)
+│   ├── raw/                      # original dataset
 │   └── processed/                # processed outputs / optional sample data
 │
 ├── src/                          # modular pipeline components
