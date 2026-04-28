@@ -12,10 +12,8 @@ def run_spark_pipeline(file_path="data/raw/train_data.csv"):
     df = spark.read.csv(file_path, header=True, inferSchema=True, sep=";")
 
     #standardise column names
-    df = df.toDF(*[
-        c.strip().lower().replace(" ", "_")
-        for c in df.columns
-    ])
+    for col_name in df.columns:
+        df = df.withColumnRenamed(col_name, col_name.strip().lower().replace(" ", "_"))
 
     #convert time columns
     df = df.withColumn("arrival_time", col("arrival_time").cast(TimestampType()))

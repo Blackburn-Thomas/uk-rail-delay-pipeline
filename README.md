@@ -91,6 +91,27 @@ Flags abnormal operational conditions such as:
 
 ---
 
+## ⚡ Spark (Scalable Pipeline Extension)
+
+To demonstrate scalability beyond in-memory processing, a PySpark-based version of the pipeline is included.
+
+This implementation mirrors the core transformation logic using distributed processing, enabling the pipeline to handle significantly larger datasets.
+
+Key capabilities:
+- Distributed data processing using PySpark
+- Column standardisation and timestamp handling at scale
+- Delay calculation and categorisation using Spark DataFrames
+- Aggregations for delay metrics and route performance
+
+Run the Spark pipeline:
+```bash
+python src/spark_pipeline.py
+```
+
+Note: This is included as a demonstration of scalable data engineering patterns and is not required for the main application.
+
+---
+
 ## 📸 Dashboard Preview
 
 Below is the interactive Streamlit dashboard used to monitor rail delays, surface key metrics, and explore disruption patterns.
